@@ -1,0 +1,15 @@
+{
+  "name": "room-homepage",
+  "version": "1.0.0",
+  "description": "![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Daniel Flores <danielfc_26@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
