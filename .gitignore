@@ -3,10 +3,10 @@
 ## Please do not remove line 5 - thanks! 🙂 ##
 ###############################################
 *.sketch
-node_modules
-design
-README-template.md
-style-guide.md
+node_modules/
+design/
+*.node_modules
+!README.md
 # Avoid accidental XD or Figma upload if you convert the design file
 #######################################################
 ## Please do not remove lines 11 and 12 - thanks! 🙂 ##
