@@ -25,37 +25,58 @@
     />
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="assets/tablet.css"
+      media="(min-width: 760px )"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/desktop.css"
+      media="(min-width: 1024px )"
+    />
   </head>
   <body>
+    <header>
+      <!-- TODO: Sticky without bg. -->
+      <div id="menu">
+        <img src="assets/images/icon-hamburger.svg" alt="" />
+        <ul style="display: none">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__title">
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+    </header>
     <div class="main">
-      <header>
-        <!-- TODO: Sticky without bg. -->
-        <div id="menu">
-          <img src="assets/images/icon-hamburger.svg" alt="" />
-          <ul style="display: none">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__title">
-          <img src="./assets/images/logo.svg" alt="" />
-        </div>
-      </header>
       <div class="slider__container">
         <div class="slider__imgs">
-          <figure id="imgs__container">
-            <img src="assets/images/mobile-image-hero-1.jpg" alt="" />
-          </figure>
+          <picture id="imgs__container">
+            <source
+              media="(min-width: 620px)"
+              srcset="assets/images/desktop-image-hero-1.jpg"
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="assets/images/mobile-image-hero-1.jpg"
+            />
+            <img
+              src="assets/images/mobile-image-hero-1.jpg"
+              alt="A pair of chairs and a table with a bonsai on top"
+            />
+          </picture>
         </div>
         <div class="slider__controls">
           <figure id="slider__button">
@@ -66,61 +87,56 @@
           </figure>
         </div>
       </div>
-    </div>
-    <div class="shopNow__container section--pad">
-      <h2>Discover innovative ways to decorate</h2>
-      <p>
-        We provide unmatched quality, comfort, and style for property owners
-        across the country. Our experts combine form and function in bringing
-        your vision to life. Create a room in your own style with our collection
-        and make your property a reflection of you and what you love.
-      </p>
-      <div class="shopNow__link">
-        <a href="">SHOP NOW</a>
-        <figure>
-          <img
-            src="./assets/images/icon-arrow.svg"
-            alt="An large arrow pointing to the right"
-          />
+      <div class="shopNow__container section--pad">
+        <h2>Discover innovative ways to decorate</h2>
+        <p>
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+        <div class="shopNow__link">
+          <a href="">SHOP NOW</a>
+          <figure>
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="An large arrow pointing to the right"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="middle">
+        <figure class="middle__img">
+          <img src="assets/images/image-about-dark.jpg" alt="" />
         </figure>
       </div>
-    </div>
-    <div class="middle">
-      <figure class="middle__img">
-        <img src="assets/images/image-about-dark.jpg" alt="" />
-      </figure>
-    </div>
-    <div class="ourFurniture section--pad">
-      <h2>About our furniture</h2>
-      <p>
-        Our multifunctional collection blends design and function to suit your
-        individual taste. Make each room unique, or pick a cohesive theme that
-        best express your interests and what inspires you. Find the furniture
-        pieces you need, from traditional to contemporary styles or anything in
-        between. Product specialists are available to help you create your dream
-        space.
-      </p>
-    </div>
-    <div class="bottom">
-      <figure class="bottom__img">
-        <img src="assets/images/image-about-light.jpg" alt="" />
-      </figure>
-    </div>
-    We are available all across the globe With stores all over the world, it's
-    easy for you to find furniture for your home or place of business. Locally,
-    we’re in most major cities throughout the country. Find the branch nearest
-    you using our store locator. Any questions? Don't hesitate to contact us
-    today. Shop now Manufactured with the best materials Our modern furniture
-    store provide a high level of quality. Our company has invested in advanced
-    technology to ensure that every product is made as perfect and as consistent
-    as possible. With three decades of experience in this industry, we
-    understand what customers want for their home and office. Shop now
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Daniel Flores</a>.
+      <div class="ourFurniture section--pad">
+        <h2>About our furniture</h2>
+        <p>
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <div class="bottom">
+        <figure class="bottom__img">
+          <img src="assets/images/image-about-light.jpg" alt="" />
+        </figure>
+      </div>
+      <!-- We are available all across the globe With stores all over the world, it's
+      easy for you to find furniture for your home or place of business.
+      Locally, we’re in most major cities throughout the country. Find the
+      branch nearest you using our store locator. Any questions? Don't hesitate
+      to contact us today. Shop now Manufactured with the best materials Our
+      modern furniture store provide a high level of quality. Our company has
+      invested in advanced technology to ensure that every product is made as
+      perfect and as consistent as possible. With three decades of experience in
+      this industry, we understand what customers want for their home and
+      office. Shop now -->
     </div>
   </body>
 </html>
