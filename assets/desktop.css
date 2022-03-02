@@ -13,6 +13,44 @@ figure {
                 "middleImg ourFurniture bottomImg";
 }
 
+header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 5rem;
+}
+
+header #menu img {
+    display: none;
+}
+
+header #menu ul {
+    display: flex;
+    padding-bottom: .4rem;
+}
+
+header #menu ul li {
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+header #menu ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    color: white;
+}
+
+header #menu ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: .6rem;
+    text-decoration-thickness: .2rem;
+}
+
+header .header__title {
+    margin: 0;
+}
+
 .slider__container {
     grid-area: slider;
 }
@@ -52,3 +90,18 @@ figure {
     height: 262px;
     padding: 15px 10px 15px 10px;
 } */
+
+@media only screen and (min-width: 1180px) {
+    /* .slider__container {
+        position: static;
+    }
+
+    .shopNow__container {
+        position: relative;
+    } */
+    .slider__controls {
+        right: -130px;
+        width: 130px;
+        height: 80px;
+    } 
+  }

@@ -37,9 +37,22 @@ header #menu p {
     font-size: 30px;
 }
 
+header #menu ul {
+    display: none;
+}
+
 .header__title {
     margin: 0 auto;
 }
+
+.header__title:hover {
+    cursor: pointer;
+}
+
+.hamburguer__menu:hover {
+    cursor: pointer;
+}
+
 
 img {
     width: 100%;
@@ -69,10 +82,14 @@ img {
     background-color: black;
 }
 
-#slider__button {
-    height: 20px;
+.slider__controls:hover {
+    cursor: pointer;
 }
 
+
+#slider__button--left,#slider__button--right {
+    height: 20px;
+}
 
 .shopNow__container h2 {
     line-height: 1.5rem;
